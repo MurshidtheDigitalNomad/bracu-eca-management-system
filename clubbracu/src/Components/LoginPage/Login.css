@@ -1,0 +1,97 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 20px;
+    width: 400px;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-label {
+    font-size: 0.95rem;
+    color: #555;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-input {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.login-button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #555;
+}
+
+.signup-link {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.link-text {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link-text:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .form-title {
+        font-size: 1.6rem;
+    }
+
+    .form-input,
+    .login-button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .input-label {
+        font-size: 0.95rem;
+    }
+}

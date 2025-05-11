@@ -1,0 +1,74 @@
+.club-details-page {
+    font-family: 'Arial', sans-serif;
+    color: #222;
+  }
+  
+.club-banner {
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.club-name1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  }
+  
+.club-content {
+    display: flex;
+    padding: 2rem;
+  }
+  
+.club-sidebar {
+    flex: 1;
+    max-width: 200px;
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+  }
+  
+.club-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+.club-sidebar li {
+    margin-bottom: 1rem;
+  }
+  
+.club-sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+.club-sidebar a:hover {
+    color: #007bff;
+  }
+  
+.club-main {
+    flex: 3;
+    padding-left: 2rem;
+  }
+  
+.club-main section {
+    margin-bottom: 2rem;
+  }
+  
+.club-main h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #e7e3e3;
+    padding-bottom: 0.5rem;
+  }
+  
+.club-main p {
+    line-height: 1.6;
+    margin-top: 0.5rem;
+  }
+  

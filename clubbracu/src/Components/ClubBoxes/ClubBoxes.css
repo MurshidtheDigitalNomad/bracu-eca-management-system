@@ -1,0 +1,35 @@
+.parent-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 40px 40px 40px;
+}
+
+.clubbox{
+    width: 320px;
+    height: 200px;
+    background-color: #dcecf4;
+    border-radius: 5px;
+    margin: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.adv-img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    max-height: 150px;
+}
+
+.club-name{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+}

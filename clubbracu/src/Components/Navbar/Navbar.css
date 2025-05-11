@@ -1,0 +1,27 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    height: 100px;
+}
+
+.links-container{
+    
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.outlet{
+    padding-top: 100px;
+}

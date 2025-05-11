@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.event-details-container {
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    
+}
+
+
+.event-content {
+    background-color: transparent;;
+    width: 70%;
+    padding: 20px;
+    margin-left: 0px;
+    
+}
+
+.event-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #295aa9;
+}
+
+.event-info {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: justify;
+    font-size: 16px;
+    color: #555555;
+    
+}
+
+.event-description  {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444444;
+    text-align: justify;
+}
+
+
+.rsvp-button {
+    margin-top: 30px;;
+    text-decoration: italic;
+    color: #444444;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.rsvp-btn{
+    background-color: #295aa9;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}

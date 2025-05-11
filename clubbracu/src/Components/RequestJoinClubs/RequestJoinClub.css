@@ -1,0 +1,49 @@
+.join-club-form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    background-color: #fefefe;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .join-club-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .join-club-form input,
+  .join-club-form select,
+  .join-club-form textarea {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .join-club-form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .join-club-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .join-club-form button:hover {
+    background-color: #005fa3;
+  }
+  

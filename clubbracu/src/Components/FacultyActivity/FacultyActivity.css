@@ -1,0 +1,14 @@
+.club-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .club-card {
+    background: #f0f8ff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 400px;
+  }

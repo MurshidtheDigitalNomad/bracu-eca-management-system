@@ -14,7 +14,7 @@ const EventDetails = () => {
     const[singleEvent, setSingleEvent]=useState(null)
     const [showModal, setShowModal] = useState(false);
     const{user} = useAuth()
-    const student_id = user.student_id;
+   
 
     useEffect(()=>{
         const fetchSingleEvent = async ()=>{
@@ -38,7 +38,7 @@ const EventDetails = () => {
     const handleRSVPConfirm = async () => {
     try {
       await axios.post(`http://localhost:8000/api/events/${event_id}/register`, {
-        student_id: student_id
+        student_id: user?.student_id
       });
       toast.success('You have successfully registered!');
     } catch (err) {
@@ -56,13 +56,18 @@ const EventDetails = () => {
                 <div className='event-content'>
                     <h1 className='event-title'>{singleEvent.event_name}</h1>
                     <div className='event-info'>
-                        <p><strong>Date:</strong> {singleEvent.event_date}</p>
+                        <p><strong>Date:</strong> {new Date(singleEvent.event_date).toLocaleDateString('en-GB', {
+                            day: 'numeric',
+                            month: 'long',
+                            year: 'numeric'
+                            })}
+                        </p>
                         <p><strong>Location:</strong> {singleEvent.venue}</p>
                         <p><strong>Organized By:</strong> {singleEvent.name}</p>
                     </div>
 
                     <div className='event-description'>
-                        <p> Event Details: {singleEvent.description}</p>
+                        <p><strong> Event Details:</strong> {singleEvent.description}</p>
                     </div>
                     
                     <div className='rsvp-button'>

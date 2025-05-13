@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import '../StudentActivity/StudentActivity.css';
 import {toast} from 'react-toastify';
 import axios from 'axios';
-import './FacultyActivity.css';
+import './FacultyActivity.css'
+
 
 const FacultyActivity = () => {
     const[pendingClubs, setPendingClubs]= useState([]);
@@ -65,10 +66,10 @@ const FacultyActivity = () => {
               <section id="view-clubs-requests">
                 <h2>Pending Club Requests</h2>
                 <div>
-                    <button onClick={fetchPendingClubs}>Click to view request</button>
+                    <button className='primary-button' onClick={fetchPendingClubs}>Click to view club request</button>
                     <div className='club-boxes'>
                         {pendingClubs.map(pending_club=>(
-                            <div key={pending_club.club_id} className='club-card'>
+                            <div key={pending_club.club_id} className='member-card'>
                                 <h3>{pending_club.name}</h3>
                                 <p><strong>Vision:</strong> {pending_club.vision}</p>
                                 <p><strong>Description:</strong> {pending_club.description}</p>
@@ -83,14 +84,19 @@ const FacultyActivity = () => {
               <section id="view-events-requests">
                 <h2>Pending Events Requests</h2>
                 <div>
-                    <button onClick={fetchPendingEvents}>Click to view event requests</button>
+                    <button className='primary-button' onClick={fetchPendingEvents}>Click to view event requests</button>
                     <div className='event-boxes'>
                         {pendingEvents.map(pending_event=>(
                             <div key={pending_event.event_id} className='event-card'>
                                 <h3>Event Name: {pending_event.event_name}</h3>
                                 <p><strong>Club:</strong> {pending_event.name}</p>
                                 <p><strong>Venue:</strong> {pending_event.venue}</p>
-                                <p><strong>Date:</strong> {pending_event.event_date}</p>
+                                <p><strong>Date:</strong>{new Date(pending_event.event_date).toLocaleDateString('en-GB', {
+                                            day: 'numeric',
+                                            month: 'long',
+                                            year: 'numeric'
+                                            })}
+                                </p>
                                 <p><strong>Description:</strong> {pending_event.description}</p>
                                 <button onClick={() => sendApprovedEvents(pending_event.event_id)}>Approve</button>
 

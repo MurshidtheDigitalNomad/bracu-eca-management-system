@@ -1,17 +1,13 @@
 import React from 'react';
+import './login.css'
 import LoginPage from '../../Components/LoginPage/LoginPage';
 
 const Login = () => {
     return(
         <div>
             <div 
-            className='flex justify-center items-center'
-            style={{
-                backgroundColor: '#e0e0e0',
-                width: '100%',
-                height: '20vh'
-            }}>
-                <h1 style={{textAlign: 'center'}}>Login</h1>
+            className='login-header'>
+                <h1 className='login-title'>Log into your Account</h1>
             </div>
             <LoginPage/>
         </div>

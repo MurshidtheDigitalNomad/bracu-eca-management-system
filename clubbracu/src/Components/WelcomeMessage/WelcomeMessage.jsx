@@ -1,5 +1,7 @@
 
 import { useAuth } from '../../context/AuthContext';
+import './WelcomeMessage.css'
+
 const WelcomeMessage = () =>{
 
     const {user}= useAuth();
@@ -9,17 +11,9 @@ const WelcomeMessage = () =>{
 
     return(
         <div className="welcome-message"
-            style={{
-                backgroundColor: '#f0f0f0',
-                padding: '20px',
-                borderRadius: '8px',
-                textAlign: 'center',
-                margin: '20px 0',
-                height: '16vh'
-            }}
         >
-            {user? (<h1 className='tc'> Welcome {user?.fullName || user?.name}!</h1>
-            ):(<h1 className='tc'> Welcome!</h1>)}
+            {user? (<h1 className='welcome-text'> Welcome {user?.fullName || user?.name}!</h1>
+            ):(<h1 className='welcome-text'> Welcome!</h1>)}
             
         </div>
     )

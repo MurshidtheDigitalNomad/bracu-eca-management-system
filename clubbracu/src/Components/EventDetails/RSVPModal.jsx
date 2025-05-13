@@ -9,7 +9,11 @@ const RSVPModal = ({ event, onConfirm, onCancel }) => {
       <div className="modal-content">
         <h3>Book your spot!</h3>
         <p>
-          Book your spot for <strong>{event.name}</strong> on <strong>{event.event_date}</strong> at <strong>{event.venue}</strong>.
+          Book your spot for <strong>{event.name}</strong> on <strong>{new Date(event.event_date).toLocaleDateString('en-GB', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          })}</strong> at <strong>{event.venue}</strong>.
         </p>
         <div className="modal-buttons">
           <button className="yes-btn" onClick={onConfirm}>Yes</button>

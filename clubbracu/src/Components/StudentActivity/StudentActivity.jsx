@@ -103,8 +103,9 @@ const Activity = () => {
         </section>
 
         <section id="request-club">
-          <h2>Request Club</h2>
-          <button><Link to='/club-request-form'>Club Creation Form</Link></button>
+          <h2>Form a Club</h2>
+          <p>Want to start your own club? Fill up the form below!</p>
+          <button className='primary-button'><Link to='/club-request-form'>Club Creation Form</Link></button>
         </section>
       </div>
     </div>

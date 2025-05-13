@@ -18,12 +18,7 @@ const CoverPhoto = () => {
                 
             }}
         >
-            <a
-                href="https://www.bracu.ac.bd/student-life/office-co-curricular-activities-oca"
-                className="absolute bottom-1 left-2 pa3 bg-white br3 b black-80 no-underline shadow-2 grow pointer inter-font"
-            >
-                Learn More
-            </a>
+           
         </div>
     )
 }

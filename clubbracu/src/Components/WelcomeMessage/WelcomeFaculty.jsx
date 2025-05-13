@@ -1,22 +1,16 @@
 import React, {useState, useEffect} from 'react';
 import { useAuth } from '../../context/AuthContext';
-
+import './WelcomeFaculty.css' 
+  
 const WelcomeFaculty = () =>{
     const{user} = useAuth();
 
     return(
-        <div className="welcome-message"
-            style={{
-                backgroundColor: '#f0f0f0',
-                padding: '20px',
-                borderRadius: '8px',
-                textAlign: 'center',
-                margin: '20px 0',
-                height: '16vh'
-            }}
+        <div className="faculty-welcome-message"
+            
         >
-            {user? (<h1 className='tc'> Welcome {user.name}!</h1>
-            ):(<h1 className='tc'> Welcome!</h1>)}
+            {user? (<h1 className='faculty-welcome-text'> Welcome {user.name}!</h1>
+            ):(<h1 className='welcome-text'> Welcome!</h1>)}
             
         </div>
     )

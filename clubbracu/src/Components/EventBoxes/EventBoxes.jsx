@@ -33,7 +33,12 @@ const EventBoxes = () => {
                     <img src={eventpic} alt="Event" className="adv-img1" />
                     <h2 className="event-name">{event.event_name}</h2>
                     <div className="event-info">
-                        <p className="info-item"><IoMdTime /> {event.event_date}</p>
+                        <p className="info-item"><IoMdTime /> {new Date(event.event_date).toLocaleDateString('en-GB', {
+                            day: 'numeric',
+                            month: 'long',
+                            year: 'numeric'
+                            })}
+                        </p>
                         <p className="event-location"><CiLocationOn /> {event.venue}</p>
                         <p className="event-organizedBy"><FcBusiness /> {event.name}</p>
                    </div>

@@ -48,7 +48,7 @@ const Searchbar = () => {
                 placeholder='Search for clubs'
                 className='search-input'
                 />
-                <button className='filter-button'> CATEGORIES </button>
+                
             </div>
 
             {searchInput && (<div className='search-club-results'>

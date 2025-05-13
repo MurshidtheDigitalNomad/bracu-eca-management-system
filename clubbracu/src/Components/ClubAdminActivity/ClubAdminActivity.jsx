@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { useAuth } from '../../context/AuthContext';
 import {Link} from 'react-router-dom'
 import '../StudentActivity/StudentActivity.css';
+import './ClubAdminActivity.css'
 import {toast} from 'react-toastify';
 import axios from 'axios';
 import '../FacultyActivity/FacultyActivity.css';
@@ -47,7 +48,7 @@ const ClubAdminActivity = () => {
               <section id="view-member-requests">
                 <h2>Pending Member Requests</h2>
                 <div>
-                    <button onClick={fetchPendingMembers}>Click to view request</button>
+                    <button className='primary-button' onClick={fetchPendingMembers}>Manage membership-requests</button>
                     <div className='club-boxes'>
                         {pendingMembers.map(pending_member=>(
                             <div key={pending_member.student_id} className='member-card'>
@@ -65,7 +66,7 @@ const ClubAdminActivity = () => {
               </section>
               <section id="request-events">
                 <h2>Request Events</h2>
-                <button><Link to={`/${user.student_id}/event-request-form`}>Event Request Form</Link></button>
+                <button className='primary-button'><Link to={`/${user.student_id}/event-request-form`}>Event Request Form</Link></button>
               </section>
             </div>
           </section>

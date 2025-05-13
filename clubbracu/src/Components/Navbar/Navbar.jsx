@@ -25,8 +25,8 @@ function Navbar(){
                     </a>
                 </div>
                 <div className= "links-container">
-                        <Link className='dim black f3 pa2 hover-bg-black-10 br2' to='/'>Clubs</Link>
-                        <Link className='dim black f3 pa2 hover-bg-black-10 br2' to='/events'>Events</Link>
+                        <Link className='nav-button active' to='/'>Clubs</Link>
+                        <Link className='nav-button' to='/events'>Events</Link>
 
                         {user ? (
                             <div className="auth-section">
@@ -37,17 +37,17 @@ function Navbar(){
                                         else if (user.role === 'club_admin') navigate('/club-admin-view');
                                         else navigate('/');
                                     }}
-                                    className="f4 black pa2 hover-bg-black-10 br2"
+                                    className="nav-button"
                                     style={{ cursor: 'pointer' }}
                                     >
-                                    Hi, {user?.name}
+                                    Hello {user?.name}
                                     </span>
-                                <button className='f4 pa2 br2 bg-black white hover-bg-dark-gray'onClick={logout}>
+                                <button className='nav-button'onClick={logout}>
                                     Logout
                                 </button>
                             </div>
                         ) : (
-                            <Link className='dim black f3 pa2 hover-bg-black-10 br2' to='/login'>Login</Link>
+                            <Link className='nav-button' to='/login'>Login</Link>
                         )}
                 </div>
             </div>

@@ -68,3 +68,26 @@
     font-weight: 400;
     color: #555;
   }
+
+.primary-button {
+  background-color: #1d4ed8; 
+  color: rgb(255, 255, 255);
+  padding: 10px 2cqh;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.primary-button:hover {
+  background-color: #2563eb; 
+  transform: translateY(-1px);
+}
+
+.primary-button:active {
+  background-color: #1e40af; 
+  transform: scale(0.98);
+}

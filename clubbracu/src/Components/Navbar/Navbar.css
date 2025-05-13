@@ -3,8 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
     background-color: white;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,6 +22,34 @@
 
 }
 
+.nav-button {
+  padding: 9px 16px;
+  background-color: #f4f6fc;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 800;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #cbdcf5;
+  color: #0056d2 
+}
+
+.nav-button.active {
+  color: #0056d2;
+  font-weight: 800;
+}
+
 .outlet{
     padding-top: 100px;
+}
+
+.auth-section{
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem
+
 }

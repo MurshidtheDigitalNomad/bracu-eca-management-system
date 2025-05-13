@@ -52,11 +52,11 @@ const FetchApprovedClubs=async(id)=>{
     const result = await pool.query(query, [id])
     const newClub= result.rows;
 
-    const memberInsertQuery = `
-        INSERT INTO club_members (student_id, club_id, status, is_admin)
-        VALUES ($1, $2, 'approved', TRUE)
-    `;
-    await pool.query(memberInsertQuery, [proposerID, newID]);
+    // const memberInsertQuery = `
+    //     INSERT INTO club_members (student_id, club_id, status, is_admin)
+    //     VALUES ($1, $2, 'approved', TRUE)
+    // `;
+    // await pool.query(memberInsertQuery, [student_id, newID]);
     return newClub;
 }
 

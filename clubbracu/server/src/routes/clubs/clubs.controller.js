@@ -15,6 +15,7 @@ const createNewClub = async (req, res)=>{
 const PendingClubs = async (req, res)=>{
     try{
         const pendingClubs = await getPendingClubs();
+        console.log(pendingClubs)
         res.status(200).json(pendingClubs);
     }catch (err) {
         console.error('Error fetching pending clubs:', err);
@@ -24,8 +25,10 @@ const PendingClubs = async (req, res)=>{
 
 const ApprovedClubs = async(req, res)=>{
     const {id}= req.params;
+    const {student_id} = req.params
     try{
-        const ApprovedClubs = await FetchApprovedClubs(id);
+        const ApprovedClubs = await FetchApprovedClubs(id, student_id);
+        console.log(ApprovedClubs)
         res.status(200).json(ApprovedClubs);
 
     }catch(err){

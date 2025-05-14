@@ -37,6 +37,8 @@ const Activity = () => {
         try {
           const response = await axios.get(`http://localhost:8000/api/events/my-events/${user.student_id}`);
           setRegisteredEvents(response.data.events);
+          console.log(registeredEvents)
+          
         } catch (err) {
           console.error(err);
           toast.error('Failed to load your events');

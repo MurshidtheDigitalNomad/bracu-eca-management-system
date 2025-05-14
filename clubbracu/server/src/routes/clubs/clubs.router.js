@@ -6,7 +6,7 @@ const { createNewClub, SearchClub, MyClubs, getClub, PendingClubs, ApprovedClubs
 
 router.post('/request-new-club', createNewClub);
 router.get('/pending-clubs', PendingClubs);
-router.patch('/:id/approve', ApprovedClubs);
+router.patch('/:id/:student_id/approve', ApprovedClubs);
 router.get('/clubs-list', getApprovedClubs);
 router.get('/:id', getClub);
 router.get('/', SearchClub);

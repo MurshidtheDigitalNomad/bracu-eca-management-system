@@ -43,7 +43,7 @@ const getPendingClubs= async()=>{
         return result.rows;
 }
 
-const FetchApprovedClubs=async(id)=>{
+const FetchApprovedClubs=async(id, student_id)=>{
     
     const query=
     `UPDATE clubs SET status= 'approved' WHERE club_id= $1
@@ -52,11 +52,11 @@ const FetchApprovedClubs=async(id)=>{
     const result = await pool.query(query, [id])
     const newClub= result.rows;
 
-    // const memberInsertQuery = `
-    //     INSERT INTO club_members (student_id, club_id, status, is_admin)
-    //     VALUES ($1, $2, 'approved', TRUE)
-    // `;
-    // await pool.query(memberInsertQuery, [student_id, newID]);
+    const memberInsertQuery = `
+        INSERT INTO club_members (student_id, club_id, status, is_admin)
+        VALUES ($1, $2, 'approved', TRUE)
+    `;
+    await pool.query(memberInsertQuery, [student_id, id]);
     return newClub;
 }
 

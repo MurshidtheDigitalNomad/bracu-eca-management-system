@@ -8,6 +8,8 @@ import './FacultyActivity.css'
 const FacultyActivity = () => {
     const[pendingClubs, setPendingClubs]= useState([]);
     const[pendingEvents, setPendingEvents] = useState([])
+ 
+
     const fetchPendingClubs= async(e) =>{
         try{
             const response= await axios.get('http://localhost:8000/api/clubs/pending-clubs');
@@ -20,8 +22,9 @@ const FacultyActivity = () => {
     }
 
     const sendApprovedClubs = async (clubId)=>{
+
         try{
-            await axios.patch(`http://localhost:8000/api/clubs/${clubId}/approve`);
+            await axios.patch(`http://localhost:8000/api/clubs/${clubId}/${student_id}/approve`);
             setPendingClubs(prev=>prev.filter(club=> club.club_id !=clubId))
 
         }catch (err) {

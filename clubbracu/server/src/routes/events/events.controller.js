@@ -92,6 +92,7 @@ const MyEvents= async(req, res)=>{
     const {student_id} = req.params;
     try{
         const myEvents = await fetchMyEvents(student_id);
+        console.log(myEvents)
         res.status(200).json({
             message:'Here is your event',
             events: myEvents

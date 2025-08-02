@@ -47,8 +47,8 @@ BEMS supports four distinct user roles, each with tailored access and features:
 
   - 💾 PostgreSQL for robust, relational data management.
 
-  -🎨 Responsive React frontend with modular components and reusable layouts.
+  - 🎨 Responsive React frontend with modular components and reusable layouts.
 
-  -🔔 Toast notifications for interactive feedback.
+  - 🔔 Toast notifications for interactive feedback.
 
-  -🗂️ Organized using MVC architecture and clean folder conventions.
+  - 🗂️ Organized using MVC architecture and clean folder conventions.

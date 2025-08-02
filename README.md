@@ -9,7 +9,7 @@ BEMS is a full-stack web application designed to centralize and simplify the man
 ***🔐 Role-Based Access***
 BEMS supports four distinct user roles, each with tailored access and features:
 
-### **👤 1. Student**
+- ### **👤 1. Student**
   -✅ View all officially approved clubs and events.
 
   -📝 Submit club membership requests.
@@ -18,28 +18,28 @@ BEMS supports four distinct user roles, each with tailored access and features:
 
   -📆 RSVP to club-organized events.
 
-### **🏢 2. Club Admin**
+- ### **🏢 2. Club Admin**
   -📥 Review and approve/reject membership requests.
 
   -🗓️ Submit event proposals to faculty.
 
   -👥 View and manage club members.
 
-### **👨‍🏫 3. Faculty Advisor**
+- ### **👨‍🏫 3. Faculty Advisor**
   -🔎 View and approve/reject new club proposals.
 
   -📋 Review and approve event requests.
 
   -🎓 Final decision-maker for formalizing clubs and events.
 
-### **🌐 4. Viewer (Public/Guest)**
+- ### **🌐 4. Viewer (Public/Guest)**
   -👁️ View the list of active clubs and their descriptions.
 
   -📅 Browse upcoming club events with time, date, and location.
 
   -🙌 Encourages transparency and promotes club visibility even for non-members and external visitors.
 
-## **🧩 Key Highlights**
+- ## **🧩 Key Highlights**
 ---
   -🎯 Custom authentication system (built using Express sessions, not Firebase).
 
